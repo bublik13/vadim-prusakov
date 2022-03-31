@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- <svg>
+        <use xlink:href="img/icons/sprite.svg#clock"></use>
+    </svg>
+    <svg>
+        <use xlink:href="img/icons/sprite.svg#coin"></use>
+    </svg>
+    <svg>
+        <use xlink:href="img/icons/sprite.svg#clouds-fill"></use>
+    </svg> -->
+    <header class="header">
+        <div class="header__top">
+          <div class="header__container container">
+            <a href="#" class="header__logo logo">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/header/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg"> -->
+                <img width="274" height="56" src="img/header/logo.svg" alt="logo" class="logo__img"/>
+              </picture> 
+            </a>
+            <select name="" id="input0" required="required" class="header__select">
+                <option class="header__option" value="rus">rus</option>
+                <option class="header__option" value="eng">eng</option>
+            </select>
+            <nav class="nav header__nav js-nav nav--active">
+              <ul class="nav__list nav__list--column">
+                <li class="nav__item">
+                  <a href="#" class="nav__link nav__link--active">Кейсы</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Услуги</a>
+                </li>
+                <li class="nav__item">
+                  <a href="#" class="nav__link">Процесс</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#" class="nav__link">Контакты</a>
+                  </li>
+              </ul>
+            </nav>
+            <button type="button" aria-label="close" class="burger header__burger js-burger">
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+              <span class="burger__line"></span>
+            </button>
+            <a class="header__button button button--width" href="#"><span>заявка на</span> проект</a>
+          </div>
+        </div>
+        <div class="header__center">
+          <div class="header__container-center container">
+            <div class="header__wrap">
+              <h1 class="header__title1">
+                БЮРО<span class="header__dot">.</span>
+              </h1>
+              <h2 class="header__title2">
+                ДИЗАЙН<span class="header__dot">.</span>
+              </h2>
+              <h3 class="header__title3">
+                УСЛУГ<span class="header__dot">.</span>
+              </h3>
+              <picture class="header__back">
+                <!-- <source media="(min-width: 1200px)" srcset="img/header/eat-desktop-1x.png, img/header/eat-desktop-2x.webp 2x">
+                <source media="(min-width: 768px)"  srcset="img/header/eat-tablet-1x.png, img/header/eat-tablet-2x.webp 2x"> -->
+                <img width="2560" height="1440" src="img/header/background.webp" alt="bacground" class="header__img"/>
+              </picture> 
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+    <!-- подключаем js -->
+    <script src="js/main.js"></script>
+    <script>
+        $('#input0').click(function() {
+         if($("select#input0 :selected").val() == "rus") {
+            $("select#input0").attr('style', 'background-image:url(images/lng_ru.png);');
+         }
+         if($("select#input0 :selected").val() == "eng") {
+            $("select#input0").attr('style', 'background-image:url(images/lng_eng.png);');
+         }
+            console.log('select color: '+$("select#input0 :selected").val());
+        });
+        </script>
+</body>
+
+</html>

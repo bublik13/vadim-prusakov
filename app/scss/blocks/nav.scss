@@ -1,0 +1,20 @@
+.nav__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav__item {
+}
+.nav__item:nth-child(2) {
+  margin-left: auto;
+  white-space: -moz-pre-space;
+}
+.nav__item:nth-child(3) {
+  margin-right: auto;
+}
+.nav__link {
+  font-family: "TT Norms";
+  @include font(24px, 28px, 400);
+  color: $nav-color-wihte;
+  text-decoration: none;
+}

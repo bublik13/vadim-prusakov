@@ -1,0 +1,70 @@
+.header {
+  background-color: $header-bg;
+  position: relative;
+}
+.header__top {
+  position: absolute;
+}
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  margin-left: 65px;
+}
+.header__select {
+  margin-right: 254px;
+  margin-left: 121px;
+  background-color: transparent;
+  border: none;
+  color: $header-color-wihte;
+}
+.header__option {
+  background-color: transparent;
+  color: $header-color-wihte;
+}
+.header__nav {
+  flex-grow: 1;
+}
+.header__wrap {
+  position: relative;
+}
+.header__burger {
+  display: none;
+}
+.header__button {
+  max-width: 340px;
+  margin-left: 143px;
+}
+.header__title1 {
+  position: absolute;
+  top: 27%;
+  color: white;
+  @include font(268px, 416px, 700, $second-family);
+  left: 25%;
+}
+.header__dot {
+  @include font(268px, 416px, 700, $second-family);
+  color: #bfa372;
+}
+.header__title2 {
+  position: absolute;
+  top: 45%;
+  color: white;
+  @include font(268px, 416px, 700, $second-family);
+  left: 31%;
+}
+.header__title3 {
+  position: absolute;
+  top: 65%;
+  color: white;
+  @include font(268px, 416px, 700, $second-family);
+  left: 42%;
+}
+.header__back{
+}
+.header__img{
+    width: 100%;
+    display: block;
+}

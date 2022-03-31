@@ -1,0 +1,30 @@
+.button {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  transition: ease-out 0.2s;
+  color: $button-color-gold;
+  background-color: $button-bg;
+  width: 100%;
+  @include font(18px, 21px, 500, 'TT Norms');
+  padding: 44px 10px 50px 10px;
+  text-align: center;
+//   @include media($md) {
+//     @include font(20px, 20px, 400, $second-family);
+//     padding-top: 17px;
+//     padding-bottom: 17px;
+//     padding-left: 15px;
+//   }
+//   &:hover {
+//     background-color: $button-bg-opacity;
+//   }
+//   &:focus {
+//     background-color: $button-bg-opacity;
+//     color: $button-color-opacity;
+//   }
+//   &:active,
+//   &._active {
+//     opacity: 1;
+//   }
+}
