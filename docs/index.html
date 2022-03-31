@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css?t=1648744261347">
+    <link rel="stylesheet" href="css/main.css?t=1648762830791">
 </head>
 
 <body>
@@ -53,21 +53,23 @@
               <span class="burger__line"></span>
               <span class="burger__line"></span>
             </button>
-            <a class="header__button button button--width" href="#"><span>заявка на</span> проект</a>
+            <a class="header__button button button--width" href="#"><span class="button__color">заявка на</span> проект</a>
           </div>
         </div>
         <div class="header__center">
           <div class="header__container-center container">
             <div class="header__wrap">
-              <h1 class="header__title1">
+              <h1 class="header__title1"><span class="header__transparant">БЮРО.</span>
                 БЮРО<span class="header__dot">.</span>
               </h1>
               <h2 class="header__title2">
-                ДИЗАЙН<span class="header__dot">.</span>
+                ДИЗАЙН<span class="header__dot">.</span>  <span class="header__transparant">ДИЗАЙН.</span>
               </h2>
               <h3 class="header__title3">
+                <span class="header__transparant">УСЛУГ.</span>
                 УСЛУГ<span class="header__dot">.</span>
               </h3>
+              <div class="header__subtitle">бюро. дизайн. услуг.</div>
               <picture class="header__back">
                 <!-- <source media="(min-width: 1200px)" srcset="img/header/eat-desktop-1x.png, img/header/eat-desktop-2x.webp 2x">
                 <source media="(min-width: 768px)"  srcset="img/header/eat-tablet-1x.png, img/header/eat-tablet-2x.webp 2x"> -->
@@ -77,10 +79,33 @@
           </div>
         </div>
       </header>
+      <section class="info">
+        <div class="info__container container">
+          <div class="info__wrap-text">
+            <a href="#" class="info__logo logo">
+              <picture>
+                <!-- <source media="(min-width: 1200px)" srcset="img/header/logo-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/header/logo-tablet.svg"> -->
+                <img width="464" height="91" src="img/info/logo.svg" alt="logo" class="logo__img"/>
+              </picture> 
+            </a>
+            <h4 class="info__title">Спасаю мир. Дорого.</h4>
+            <div class="info__subtitle">Премиальный дизайн, брендинг и разработка решений любой сложности по всему миру.</div>
+            <a class="info__link" href="#">процесс <span class="info__link-color">разработки</span></a>
+          </div>
+          <div class="info__wrap-img">
+            <picture class="info__back">
+              <!-- <source media="(min-width: 1200px)" srcset="img/header/eat-desktop-1x.png, img/header/eat-desktop-2x.webp 2x">
+              <source media="(min-width: 768px)"  srcset="img/header/eat-tablet-1x.png, img/header/eat-tablet-2x.webp 2x"> -->
+              <img width="463" height="465" src="img/info/background.webp" alt="bacground" class="info__img"/>
+            </picture> 
+          </div>
+        </div>
+      </section>
 
 
     <!-- подключаем js -->
-    <script src="js/main.js?t=1648744261347"></script>
+    <script src="js/main.js?t=1648762830791"></script>
     <script>
         $('#input0').click(function() {
          if($("select#input0 :selected").val() == "rus") {

@@ -34,15 +34,26 @@
   display: none;
 }
 .header__button {
-  max-width: 340px;
+  max-width: 390px;
   margin-left: 143px;
+  position: relative;
+  display: flex;
+}
+.header__button::after {
+  position: absolute;
+  content:' ';
+  background: url(../img/header/line.svg) no-repeat;
+  right: 91px;
+  bottom: 32px;
+  width: 92px;
+  height: 6px;
 }
 .header__title1 {
   position: absolute;
   top: 27%;
   color: white;
   @include font(268px, 416px, 700, $second-family);
-  left: 25%;
+  left: -13%;
 }
 .header__dot {
   @include font(268px, 416px, 700, $second-family);
@@ -53,18 +64,31 @@
   top: 45%;
   color: white;
   @include font(268px, 416px, 700, $second-family);
-  left: 31%;
+  right: -27%;
 }
 .header__title3 {
   position: absolute;
   top: 65%;
   color: white;
   @include font(268px, 416px, 700, $second-family);
-  left: 42%;
+  left: 1%;
 }
-.header__back{
+.header__transparant {
+  @include font(268px, 416px, 700, $second-family);
+  color: transparent;
+  -webkit-text-stroke: 1px white;
 }
-.header__img{
-    width: 100%;
-    display: block;
+.header__subtitle {
+  @include font(12px, 14px, 400, $second-family);
+  color: #ffffff;
+  position: absolute;
+  top: 14%;
+  left: 10px;
+  transform: rotate(-90deg);
+}
+.header__back {
+}
+.header__img {
+  width: 100%;
+  display: block;
 }

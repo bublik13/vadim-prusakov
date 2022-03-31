@@ -4,27 +4,33 @@
   vertical-align: top;
   border: none;
   transition: ease-out 0.2s;
-  color: $button-color-gold;
+  color: $button-color-wihte;
   background-color: $button-bg;
   width: 100%;
-  @include font(18px, 21px, 500, 'TT Norms');
+  text-decoration: none;
+  letter-spacing: 0.38em;
+  @include font(18px, 21px, 500, "TT Norms");
   padding: 44px 10px 50px 10px;
   text-align: center;
-//   @include media($md) {
-//     @include font(20px, 20px, 400, $second-family);
-//     padding-top: 17px;
-//     padding-bottom: 17px;
-//     padding-left: 15px;
-//   }
-//   &:hover {
-//     background-color: $button-bg-opacity;
-//   }
-//   &:focus {
-//     background-color: $button-bg-opacity;
-//     color: $button-color-opacity;
-//   }
-//   &:active,
-//   &._active {
-//     opacity: 1;
-//   }
+  //   @include media($md) {
+  //     @include font(20px, 20px, 400, $second-family);
+  //     padding-top: 17px;
+  //     padding-bottom: 17px;
+  //     padding-left: 15px;
+  //   }
+  //   &:hover {
+  //     background-color: $button-bg-opacity;
+  //   }
+  //   &:focus {
+  //     background-color: $button-bg-opacity;
+  //     color: $button-color-opacity;
+  //   }
+  //   &:active,
+  //   &._active {
+  //     opacity: 1;
+  //   }
+}
+.button__color {
+  color: $button-color-gold;
+  display: inline-block;
 }
