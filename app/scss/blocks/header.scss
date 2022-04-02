@@ -4,6 +4,9 @@
 }
 .header__top {
   position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
 }
 .header__container {
   display: flex;
@@ -41,7 +44,7 @@
 }
 .header__button::after {
   position: absolute;
-  content:' ';
+  content: " ";
   background: url(../img/header/line.svg) no-repeat;
   right: 91px;
   bottom: 32px;

@@ -13,8 +13,7 @@
   margin-right: auto;
 }
 .nav__link {
-  font-family: "TT Norms";
-  @include font(24px, 28px, 400);
+  @include font(24px, 28px, 400,$second-family);
   color: $nav-color-wihte;
   text-decoration: none;
 }

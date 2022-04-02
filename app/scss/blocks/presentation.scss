@@ -1,0 +1,54 @@
+.presentation {
+  background: url(../img/presentation/background.jpg) center center/ cover
+    no-repeat;
+}
+.presentation__container {
+  position: relative;
+  padding-top: 356px;
+  padding-bottom: 314px;
+}
+.presentation__title {
+  letter-spacing: 1.56em;
+  @include font(24px, 28px, 400, $second-family);
+  color: #bfa372;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 64px;
+
+}
+.presentation__title::after {
+    position: absolute;
+    content:' ';
+    left: 39%;
+    bottom: -50px;
+    width: 100%;
+    height: 20px;    
+    background: url(../img/presentation/arrow.svg) no-repeat;
+  }
+.presentation__subtitle {
+  letter-spacing: 2.72em;
+  @include font(46px, 55px, 700, $second-family);
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.presentation__subtitle-color {
+  @include font(46px, 55px, 700, $second-family);
+  color: #bfa372;
+  -webkit-text-stroke: 0px white;
+}
+.presentation__back {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 0;
+}
+.presentation__img {
+  display: block;
+  width: 1569px;
+  height: 1000px;
+}
