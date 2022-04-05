@@ -1,0 +1,12 @@
+.title {
+  @include font(48px, 57px, 400, $second-family);
+  color: #ffffff;
+}
+.title--color {
+  @include font(48px, 57px, 400, $second-family);
+  color: #181717;
+}
+.title--big {
+  @include font(85px, 132px, 400, $second-family);
+  color: #ffffff;
+}

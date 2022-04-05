@@ -1,0 +1,36 @@
+.link {
+  display: inline-block;
+  @include font(20px, 24px, 400, $second-family);
+  letter-spacing: 0.38em;
+  text-decoration: none;
+  position: relative;
+}
+.link--black {
+  color: $link-color-black;
+  position: relative;
+}
+.link--black::after {
+  position: absolute;
+  content: " ";
+  background: url(../img/link/line.svg) no-repeat;
+  right: -11px;
+  top: 33px;
+  width: 195px;
+  height: 9px;
+}
+.link--white {
+  color: $link-color-white;
+  position: relative;
+}
+.link--white::after {
+  position: absolute;
+  content: " ";
+  background: url(../img/link/line-mini.svg) no-repeat;
+  right: -85px;
+  top: 33px;
+  width: 195px;
+  height: 9px;
+}
+.link-color {
+  color: $link-color-gold;
+}
