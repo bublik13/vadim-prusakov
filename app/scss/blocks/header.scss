@@ -2,12 +2,21 @@
   background-color: $header-bg;
   position: relative;
 }
-.header__top {
+.header::after {
+  background: url(../img/header/background2.png) left 26% center/cover no-repeat;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  z-index: 1;
+  content: " ";
+  top: -72px;
+  left: 0;
+  height: 2368px;
+  width: 100%;
 }
+// .header__top {
+//   position: absolute;
+//   left: 50%;
+//   transform: translate(-50%);
+//   z-index: 1;
+// }
 .header__container {
   display: flex;
   align-items: center;
@@ -15,13 +24,18 @@
 }
 .header__logo {
   margin-left: 65px;
+  align-self: self-start;
+  padding-top: 21px;
 }
 .header__select {
-  margin-right: 254px;
-  margin-left: 121px;
+  margin-right: 229px;
+  margin-left: 118px;
   background-color: transparent;
   border: none;
   color: $header-color-white;
+  @include font(18px, 21px, 500, $second-family);
+  align-self: start;
+  margin-top: 27px;
 }
 .header__option {
   background-color: transparent;
@@ -46,17 +60,22 @@
   position: absolute;
   content: " ";
   background: url(../img/header/line.svg) no-repeat;
-  right: 91px;
-  bottom: 32px;
+  right: 76px;
+  bottom: 30px;
   width: 92px;
   height: 6px;
 }
+.header__container-center {
+  min-height: 1144px;
+  position: relative;
+}
 .header__title1 {
   position: absolute;
-  top: 27%;
-  color: white;
+  top: 14%;
+  color: #fff;
   @include font(268px, 416px, 700, $second-family);
-  left: -13%;
+  left: 22%;
+  z-index: 10;
 }
 .header__dot {
   @include font(268px, 416px, 700, $second-family);
@@ -64,17 +83,19 @@
 }
 .header__title2 {
   position: absolute;
-  top: 45%;
+  top: 36%;
   color: white;
   @include font(268px, 416px, 700, $second-family);
-  right: -27%;
+  right: 22%;
+  z-index: 10;
 }
 .header__title3 {
   position: absolute;
-  top: 65%;
+  top: 60%;
   color: white;
   @include font(268px, 416px, 700, $second-family);
-  left: 1%;
+  left: 40%;
+  z-index: 10;
 }
 .header__transparant {
   @include font(268px, 416px, 700, $second-family);
@@ -85,9 +106,10 @@
   @include font(12px, 14px, 400, $second-family);
   color: #ffffff;
   position: absolute;
-  top: 14%;
-  left: 10px;
+  top: 10%;
+  left: -13px;
   transform: rotate(-90deg);
+  letter-spacing: 0.1em;
 }
 .header__back {
 }

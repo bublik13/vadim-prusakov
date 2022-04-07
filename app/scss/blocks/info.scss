@@ -1,11 +1,12 @@
 .info {
   background-color: #ffffff;
+  position: relative;
 }
 .info__container {
-  padding-top: 205px;
-  padding-bottom: 227px;
-  padding-left: 302px;
-  padding-right: 464px;
+  padding-top: 204px;
+  padding-bottom: 240px;
+  padding-left: 308px;
+  padding-right: 456px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -27,4 +28,7 @@
   color: $info-color-black;
   max-width: 862px;
   margin-bottom: 115px;
+}
+.info__wrap-img {
+  padding-top: 40px;
 }

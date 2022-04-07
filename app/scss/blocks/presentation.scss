@@ -5,7 +5,7 @@
 .presentation__container {
   position: relative;
   padding-top: 356px;
-  padding-bottom: 314px;
+  padding-bottom: 339px;
 }
 .presentation__title {
   letter-spacing: 1.56em;
@@ -22,7 +22,7 @@
     content:' ';
     left: 39%;
     bottom: -50px;
-    width: 100%;
+    width: 552px;
     height: 20px;    
     background: url(../img/presentation/arrow.svg) no-repeat;
   }
@@ -42,7 +42,7 @@
 }
 .presentation__back {
   position: absolute;
-  top: -200px;
+  top: -183px;
   left: 50%;
   transform: translate(-50%);
   z-index: 0;

@@ -98,7 +98,8 @@ function img() {
         encodeOptions: {
           mozjpeg: {},
           webp: {},
-          avif: {}
+          avif: {},
+          oxipng: {}
         },
       }))
     )

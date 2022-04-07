@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/main.css?t=1649119992671">
+    <link rel="stylesheet" href="css/main.css?t=1649259323026">
 </head>
 
 <body>
@@ -18,6 +18,18 @@
     <svg>
         <use xlink:href="img/icons/sprite.svg#clouds-fill"></use>
     </svg> -->
+<picture><source srcset="img/desktop.avif" type="image/avif"><source srcset="img/desktop.webp" type="image/webp"><img class="pp"    src="img/desktop.jpg" alt=""></picture>
+    <style>
+      .pp {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 999;
+        transform: translateX(-50%);
+        opacity: .6;
+        pointer-events: none;
+      }
+    </style>
     <header class="header">
         <div class="header__top " id=" header">
           <div class="header__container container">
@@ -58,22 +70,20 @@
         </div>
         <div class="header__center">
           <div class="header__container-center container">
-            <div class="header__wrap">
-              <h1 class="header__title1"><span class="header__transparant">БЮРО.</span>
+              <h1 class="header__title1">
                 БЮРО<span class="header__dot">.</span>
               </h1>
               <h2 class="header__title2">
-                ДИЗАЙН<span class="header__dot">.</span>  <span class="header__transparant">ДИЗАЙН.</span>
+                ДИЗАЙН<span class="header__dot">.</span>
               </h2>
               <h3 class="header__title3">
-                <span class="header__transparant">УСЛУГ.</span>
                 УСЛУГ<span class="header__dot">.</span>
               </h3>
-              <div class="header__subtitle">бюро. дизайн. услуг.</div>
+              <div class="header__subtitle">БЮРО. ДИЗАЙН. УСЛУГ.</div>
               <picture class="header__back">
                 <!-- <source media="(min-width: 1200px)" srcset="img/header/eat-desktop-1x.png, img/header/eat-desktop-2x.webp 2x">
                 <source media="(min-width: 768px)"  srcset="img/header/eat-tablet-1x.png, img/header/eat-tablet-2x.webp 2x"> -->
-                <img width="2560" height="1440" src="img/header/background.webp" alt="bacground" class="header__img"/>
+                <!-- <img width="2560" height="1440" src="img/header/background.webp" alt="bacground" class="header__img"/> -->
               </picture> 
             </div>
           </div>
@@ -242,7 +252,7 @@
         </div>
       </footer>
     <!-- подключаем js -->
-    <script src="js/main.js?t=1649119992671"></script>
+    <script src="js/main.js?t=1649259323026"></script>
     <script>
         $('#input0').click(function() {
          if($("select#input0 :selected").val() == "rus") {

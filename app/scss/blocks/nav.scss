@@ -2,15 +2,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 .nav__item {
+  
+}
+.nav__item:nth-child(1) {
+  margin-right: auto;
 }
 .nav__item:nth-child(2) {
   margin-left: auto;
-  white-space: -moz-pre-space;
 }
 .nav__item:nth-child(3) {
-  margin-right: auto;
+  width: 15%;
+  margin-left: 148px;
+}
+.nav__item:nth-child(4) {
+  margin-left: auto
 }
 .nav__link {
   @include font(24px, 28px, 400,$second-family);
